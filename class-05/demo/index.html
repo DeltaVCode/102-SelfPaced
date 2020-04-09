@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CSS Demo</title>
+      <!--  <script></script>   tags can be added here to link to javascript  --> 
+      <link rel="stylesheet" href="css/style.css" >
+  <!-- Here is another example of something you should not do, which is to add styles into the head for rendering to the page. -->
+    <style> 
+    body{
+        background-color: rgb(83, 160, 160);
+    }
+    </style>
+
+      <!-- Add a style here -->
+   </head>
+   <body>
+      <header>
+         <h1>Choose your favorite Pizza!</h1>
+         <nav>
+            <ul>
+                <!-- Inline style are bad practice and developers should use this method of styling -->
+               <li><a style="background-color: azure; color:blue;" href="index.html">Home Page</a></li>
+               <li><a href="index_PageTwo.html">IndexTwo Page</a></li>
+               <li><a href="https://github.com/DeltaVCode/102-SelfPaced">DeltaV GitHub Page</a></li>
+               <li><a href="http://www.mypapavitos.com/location/waterloo/">Papa Vitos!</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <img id="topSpace" src="http://placehold.it/960x450">
+         <h2>The various Pizzas</h2>
+         <ul>
+            <li  class="addMargin"><img class="pizzaImageSize" src="images/mwDeluxePizzaThinCrust.jpg" alt="Pizza from Papa Vitos" ></li>
+            <li><img class="pizzaImageSize" src="images/detroitPizza.jpeg" alt="Pizza from Detroit" ></li>
+            <li><img class="pizzaImageSize" src="images/newYorkPizza.jpeg" alt="Pizza from New York" ></li>
+            <li><img class="pizzaImageSize" src="images/cpoGinderPizza.jpeg" alt="Pizza from Oven Grinder" ></li>
+            <li><img class="pizzaImageSize" src="images/calzonePizza.jpeg" alt="Calzone style Pizza" ></li>
+            <li><img class="pizzaImageSize" src="images/chicagoPizza.jpeg" alt="Deep Dish Pizza from Chicago" ></li>
+         </ul>
+      </main>
+      <footer>
+          <p>To find out more, click button.</p>
+         <button>Click Me!</button>
+      </footer>
+      <script src="js/app.js"></script>
+   </body>
+</html>
