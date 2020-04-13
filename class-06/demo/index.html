@@ -4,10 +4,12 @@
       <title>CSS Demo</title>
       <!--  <script></script>   tags can be added here to link to javascript  --> 
       <link rel="stylesheet" href="css/style.css" >
+      <link rel="stylesheet" href="css/bart.css" >
+
   <!-- Here is another example of something you should not do, which is to add styles into the head for rendering to the page. -->
     <style> 
     body{
-        background-color: rgb(83, 160, 160);
+        background-color: rgb(32, 58, 70);
     }
     </style>
 
@@ -15,7 +17,8 @@
    </head>
    <body>
       <header>
-         <h1>Choose your favorite Pizza!</h1>
+         <h1 id="removeThis">Choose your favorite Pizza!</h1>
+         <script src="js/app.js"></script>
          <nav>
             <ul>
                 <!-- Inline style are bad practice and developers should use this method of styling -->
@@ -26,6 +29,68 @@
             </ul>
          </nav>
       </header>
+     
+
+      <div id="bart">
+         <div class="head">
+             <div class="no-border body hair hair1"></div>
+             <div class="no-border body hair hair2"></div>
+             <div class="no-border body hair hair3"></div>
+             <div class="no-border body hair hair4"></div>
+             <div class="no-border body hair hair5"></div>
+             <div class="no-border body hair hair6"></div>
+             <div class="no-border body hair hair7"></div>
+             <div class="no-border body hair hair8"></div>
+             <div class="no-border body hair hair9"></div>
+             <div class="body mouth-lip2"></div>
+             <div class="no-border body head-left1"></div>
+             <div class="no-border body head-left2"></div>
+             <div class="no-border body head-left3"></div>
+             <div class="no-border body head-left4"></div>
+             <div class="no-border body head-left5"></div>
+             <div class="no-border body head-left6"></div>
+             <div class="no-border body head-left7"></div>
+             <div class="body eyelid"></div>
+             <div class="no-border body mouth"></div>
+             <div class="body mouth-lip"></div>
+             <div class="no-border body head-right2"></div>
+             <div class="no-border body head-right1"></div>
+             <div class="no-border body head-right3"></div>
+             
+             <!-- The ear -->
+             <div class="body ear">
+                 <div class="no-border inner1"></div>
+                 <div class="no-border inner2"></div>
+                 <div class="no-border body clip"></div>
+             </div>
+             
+             <!-- The right eye -->
+             <div class="right-eye">
+                 <div class="no-border right-eye-pupil"></div>
+       <div class="no-border body eyelid-top"></div>
+       <div class="no-border body eyelid-bottom"></div>
+             </div>
+             
+             <!-- The nose -->
+             <div class="no-border body nose"></div>
+             <div class="body nose-tip"></div>
+             
+             <!-- The left eye -->
+             <div class="left-eye">
+                 <div class="no-border left-eye-pupil"></div>
+       <div class="no-border body eyelid-top"></div>
+       <div class="no-border body eyelid-bottom"></div>
+             </div>
+        
+             <div class="no-border mouth-smile"></div>
+         </div>
+     </div>
+
+
+
+
+
+
       <main>
          <img id="topSpace" src="http://placehold.it/960x450">
          <h2>The various Pizzas</h2>
@@ -38,10 +103,15 @@
             <li><img class="pizzaImageSize" src="images/chicagoPizza.jpeg" alt="Deep Dish Pizza from Chicago" ></li>
          </ul>
       </main>
+      <script>     document.write('<h3>These Pizzas look good.</h3>');     </script>
       <footer>
           <p>To find out more, click button.</p>
          <button>Click Me!</button>
       </footer>
-      <script src="js/app.js"></script>
+
+
+
+      <script src="js/appTwo.js"></script>
+
    </body>
 </html>
